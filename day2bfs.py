@@ -67,11 +67,11 @@ ani = FuncAnimation(
     fig,
     update,
     frames=len(order),
-    interval=1000,   # 1 second per step
+    interval=1000,   
     repeat=False
 )
 
 plt.close(fig)
 
-# Display animation in Google Colab
+
 HTML(ani.to_jshtml())
